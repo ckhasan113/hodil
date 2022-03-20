@@ -1,0 +1,35 @@
+/*==========================
+    Owl Carousel Common CSS
+==========================*/
+.owl-carousel .owl-item img {
+  display: inline-block;
+  width: auto;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  background: transparent;
+  border: 1px solid #454545;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  color: #454545;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background: #fbbf3f;
+  border-color: #fbbf3f;
+  color: #060606;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.owl-prev {
+  margin-right: 10px;
+}

@@ -1,0 +1,994 @@
+/*=====================
+    Responsive CSS
+======================*/
+/*
+-----------------------------
+Table of Content
+
+1. Laptop Layout
+2. Wide Screen Layout
+3. Header Area Heigh
+
+-----------------------------------
+4. Tab Layout
+    a. Owl_Nav
+    b. Contact_Form
+    c. Welcome_Area
+    d. About_Area
+    e. Counter_Area
+    f. Service_Area
+    g. Client_Area
+    h. Testimonial_Area
+    i. Contact_Area
+
+    j. Single Service Page
+        A. Single_Service_Common
+        B. Social
+      
+    k. Service Details Page
+        A. Service_Details_Common
+      
+    l. Single Portfolio
+    m. Contact Us
+        A. Top_Area
+        B. Contact_Info
+        C. Office_Info
+        D. Contact_Us_Work_Area
+
+    n. Tab_About_Us
+        A. Tab_About_Us_Contact_Info
+        B. Tab_About_Us_About_Area
+        C. Tab_About_Us_Team
+
+
+-------------------------------------
+5. Mobile Layout
+    a. Bootstrap
+    b. Mobile_Common_Tag
+    c. Mobile_Heading
+    d. Mobile_Space
+    e. Mobile_Padding
+    f. Mobile_Button
+    g. All_Page_Text_Align
+    h. Mobile_Owl_Carousel
+    i. Mobile_Contact_Form
+    j. Mobile_Service_List
+    k. Mobile_Home_Page
+        A. Mobile_Welcome_Area
+        B. Mobile_About_rea
+        C. Mobile_Counter_Area
+        D. Mobile_Service_Area
+        E. Mobile_Blog_Area
+        F. Mobile_Work_Area
+        G. Mobile_Client_Area
+        H. Mobile_Testimonial_Area
+        I. Mobile_Footer_Area
+
+    l. Mobile_Single_News_Page
+        A. Mobile_News_Details_Sub
+        B. Mobile_Video
+        C. Mobile_Social
+        D. Mobile_Comment_Area
+        E. Mobile_Single_Right_Area
+             i. Mobile_Article_Area
+    
+    m. Mobile_Single_Service_Page
+        A. Mobile_Service_Area
+    
+    n. Mobile_Single_Portfolio
+        A. Mobile_Portfolio_Spaceing
+        B. Mobile_Portfolio_Owl_Carousel
+        C. Mobile_Portfolio_Solve_Area
+        D. Mobile_Portfolio_Single_Portfolio_Text
+        E. Mobile_Portfolio_Card_Box
+        
+    o. Mobile_Contact_Us
+        A. Mobile_Contact_Info
+        B. Mobile_Contact_Us_Work_Area
+
+    p. Mobile_About_Us
+        A. Mobile_About_Us_Contact_Info
+        B. Mobile_About_Us_About_Area
+        C. Mobile_About_Us_Team
+
+-----------------------------------------
+6. Small Screen Mobile Layout
+    a. Small_Common_Tag
+    b. Small_Home_Page_Area
+        A. Small_About_Area
+        B. Samll_Counter_Area
+
+    c. Small_Single_News_Area
+        A. Small_News_Comment_Area
+
+    d. Samll_Contact_Us
+        A. Small_Contact_Us_Work_Area
+    
+    e. Small_About_Us
+        A. Small_About_Us_Team
+
+-----------------------------
+*/
+
+/*------------------
+  Laptop Layout
+-------------------*/
+@media only screen and (max-width: 1390px) {
+  .welcome_slider_img .owl-dots {
+    right: 38%;
+  }
+  img.contact_info_img {
+    width: auto;
+    height: 100%;
+  }
+  .contact_us_office .office_address {
+    padding-right: 0px;
+  }
+  .single_portfolio_service .card_box {
+    padding: 8px 35px;
+  }
+  .work_contact_form_wrap .contact_form form input,
+  .work_contact_form_wrap .contact_form form textarea,
+  .work_contact_form_wrap .contact_form form select {
+    background: #1f1f1f;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .about_us_about_counter {
+    margin: 50px 0 0 60px;
+  }
+  .single_team {
+    margin: 0px 0px 30px 0px;
+    padding-bottom: 0;
+  }
+}
+
+/*------------------
+  Wide Screen Layout
+-------------------*/
+@media only screen and (min-width: 1000px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    padding-right: var(--bs-gutter-x, 0rem);
+    padding-left: var(--bs-gutter-x, 0rem);
+  }
+}
+
+/*------------------
+  Header Area Heigh
+-------------------*/
+@media only screen and (min-width: 961px) and (max-width: 1300px) {
+  .header_area .col-6 {
+    display: contents;
+  }
+}
+/*------------------
+      Tab Layout
+-------------------*/
+@media only screen and (max-width: 991px) {
+  /* Owl_Nav */
+  .owl-nav > button > div {
+    border: 1px solid #fff;
+  }
+  .owl-nav > button > div > i {
+    color: #fff;
+  }
+  /* Contact_Form */
+  .form_popup .contact_form {
+    width: 80%;
+    margin-top: 25%;
+  }
+  /* Welcome_Area */
+  .welcome_area .col-lg-5 {
+    height: 440px;
+  }
+  .welcome_area {
+    text-align: center;
+  }
+  .welcome_text h1 {
+    line-height: 3.13rem;
+    font-size: 36px;
+  }
+  .welcome_text p {
+    text-align: center;
+  }
+  .welcome_text_table_cell {
+    display: block;
+    padding-top: 100px;
+  }
+  .welcome_slider_card {
+    bottom: -1px;
+  }
+  .welcome_slider_card p {
+    text-align: center;
+  }
+  .welcome_slider_img .owl-dots {
+    right: 23%;
+    bottom: 2%;
+  }
+
+  /* About_Area */
+  .about_area {
+    text-align: center;
+  }
+  .about_area .about_text p {
+    text-align: center;
+  }
+  .about_area .about_img img {
+    width: 100%;
+  }
+  .about_area .about_text {
+    padding: 30px 15px 0 15px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .about_area .about_text h1::after {
+    width: 335px;
+    bottom: -20px;
+    right: 26%;
+  }
+  /* Counter_Area */
+  .counter_area {
+    text-align: center;
+  }
+  .counter_area .heading2 h3:after {
+    width: 120px;
+    bottom: -10%;
+    left: 35%;
+  }
+  .counter_area p {
+    text-align: center;
+  }
+  .tab_display_none {
+    display: none;
+  }
+
+  /* Service_Area*/
+  .single_service:first-child {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  /* Client Area */
+  .client_area {
+    border-radius: 10px;
+  }
+  .client_slider_img_counter {
+    padding-top: 40px;
+  }
+  .single_client_img {
+    height: 550px;
+  }
+  .single_client_img img {
+    height: 100%;
+  }
+  .client_area .owl-nav > button > div {
+    border: 0px;
+  }
+  .client_area .owl-nav {
+    left: 43%;
+  }
+  .client_area_wrap .owl-carousel .owl-nav button.owl-next,
+  .client_area_wrap .owl-carousel .owl-nav button.owl-prev {
+    background: #fff;
+    border: 0;
+  }
+
+  .client_area_wrap .owl-carousel .owl-nav button.owl-next:hover,
+  .client_area_wrap .owl-carousel .owl-nav button.owl-prev:hover {
+    background: #fbbf3f;
+  }
+
+  /* Testimonial_Area*/
+  .testimonials_container {
+    margin-top: -10px;
+  }
+
+  .testimonials_carousel .owl-nav {
+    right: 0;
+    bottom: 35px;
+  }
+
+  /*Contact Area */
+  img.contact_img {
+    display: none;
+  }
+  .contact_wrap .border_radius_0_10_10_0 {
+    border-radius: 10px;
+  }
+
+  /* ------ Single Service Page ------ */
+  /* Single_Service_Common */
+  .news_details_sub {
+    padding: 10px 0px 0px 30px;
+  }
+  /* Social */
+  .single_news_social .footer_social {
+    text-align: center;
+  }
+
+  /* ----- Service Details Page ------ */
+
+  /* Service_Details_Common */
+  .consultant_area .space_60,
+  .service_page_service_area .space_60 {
+    height: 20px;
+  }
+  .service_page_service_area .mobile_spacing {
+    margin-top: 20px;
+  }
+
+  /* ---------- Single Portfolio --------- */
+  .portfolio_social {
+    margin-top: 26px;
+  }
+  .portfolio_social li:nth-child(2) {
+    margin-left: 100px;
+  }
+  .responsive_tab_spacing {
+    margin-top: 30px;
+  }
+  .single_portfolio_solution_text p {
+    text-align: unset;
+  }
+  .made_way_text {
+    margin-top: 20px;
+  }
+  .single_porfolio_carousel .owl-nav {
+    margin-top: 10px;
+    margin-left: -65px;
+  }
+  .single_portfolio_contact_img img {
+    display: none;
+  }
+  .contact_form_text {
+    border-radius: 10px;
+  }
+
+  /* --------- Contact Us ----------- */
+
+  /* Top_Area */
+  .contact_top_area_text,
+  .contact_top_area_text p,
+  .contact_top_area_btn {
+    text-align: center;
+  }
+
+  /* Contact_Info */
+  .contact_us_contact_info_area {
+    position: relative;
+    margin-top: 70px;
+  }
+  .contact_us_contact_info_area .info_card {
+    right: 10%;
+    top: -25%;
+    width: 300px;
+    padding: 20px 25px;
+  }
+  .contact_info_img img {
+    width: 100%;
+    height: 550px;
+  }
+  .contact_info_social {
+    left: 10%;
+  }
+
+  /* Office_Info */
+  .contact_us_office .col-lg-4 {
+    margin-bottom: 25px;
+  }
+  .contact_us_office .col-lg-4 .space_20 {
+    height: 10px;
+  }
+  .contact_us_office .col-lg-4:last-child {
+    margin-bottom: 0;
+  }
+  .contact_us_office .col-lg-4,
+  .contact_us_office .col-lg-4 p,
+  .contact_us_office .col-lg-4:nth-child(2),
+  .contact_us_office .col-lg-4:last-child {
+    padding: 0;
+    text-align: center;
+  }
+  .single_contact_info .contact_info_icon {
+    display: none;
+  }
+  .single_contact_info {
+    padding-left: 0;
+  }
+  .row_padding {
+    padding: 80px 0 40px 0;
+  }
+
+  /* Contact_Us_Work_Area */
+  .work_contact_form_wrap {
+    text-align: center;
+  }
+  .work_contact_map img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* --------- Tab_About_Us ----------- */
+
+  /* Tab_About_Us_Contact_Info */
+  .about_us_main_body .contact_us_contact_info_area {
+    margin-top: 0px;
+  }
+
+  /* Tab_About_Us_About_Area */
+  .about_us_about_counter {
+    margin: 0;
+  }
+
+  /* Tab_About_Us_Team */
+  .single_team {
+    margin: 2px;
+    margin-bottom: 30px;
+  }
+  .about_us_team_row:last-child(9) {
+    display: none;
+  }
+}
+
+/*------------------
+    Mobile Layout
+-------------------*/
+@media only screen and (max-width: 767px) {
+  /* Bootstrap */
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 1rem);
+  }
+
+  /* Mobile_Common_Tag */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    text-align: center;
+  }
+
+  /* Mobile_Heading */
+  .heading h2 {
+    font-size: 25px;
+  }
+  .heading2 h3 {
+    font-size: 25px;
+  }
+  .heading3 h2 {
+    font-size: 24px;
+  }
+
+  /* Mobile_Space */
+  .space_80 {
+    height: 40px;
+  }
+
+  /* Mobile_Padding */
+  .section_padding {
+    padding: 50px 0;
+  }
+
+  /* Mobile_Button */
+  .cbtn {
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+  }
+  .welcome_area .cbtn {
+    left: 0%;
+  }
+  .client_card .cbtn.cbtn1 {
+    left: 32%;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+  .service_area .heading_rbtn .cbtn.cbtn1 {
+    left: -36%;
+  }
+  .blog_area .heading_rbtn .cbtn.cbtn1 {
+    left: -37%;
+    margin-bottom: 10px;
+  }
+
+  /* All_Page_Text_Align */
+  .news_details_page,
+  .single_service_main_div {
+    text-align: center;
+  }
+
+  /* Mobile_Owl_Carousel */
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
+    width: 30px;
+    height: 30px;
+  }
+  .owl-prev {
+    margin-right: 50px;
+  }
+  i.arrow_alignment {
+    position: absolute;
+    top: 10%;
+  }
+  .home_page_main_body i.arrow_alignment,
+  .single_service_main_div .home_page_main_body i.arrow_alignment {
+    top: 9%;
+  }
+  .home_page_main_body .owl-carousel .owl-nav button.owl-next i.arrow_alignment,
+  .single_service_main_div
+    .owl-carousel
+    .owl-nav
+    button.owl-next
+    i.arrow_alignment,
+  .about_us_main_body .owl-carousel .owl-nav button.owl-next i.arrow_alignment {
+    right: 7%;
+  }
+  .home_page_main_body .owl-carousel .owl-nav button.owl-prev i.arrow_alignment,
+  .single_service_main_div
+    .owl-carousel
+    .owl-nav
+    button.owl-prev
+    i.arrow_alignment,
+  .about_us_main_body .owl-carousel .owl-nav button.owl-prev i.arrow_alignment {
+    left: 7%;
+  }
+
+  .testimonials_container .owl-carousel .owl-nav button.owl-next,
+  .testimonials_container .owl-carousel .owl-nav button.owl-prev,
+  .single_porfolio_carousel .owl-carousel .owl-nav button.owl-next,
+  .single_porfolio_carousel .owl-carousel .owl-nav button.owl-prev {
+    color: #b1b1b1;
+    border: 1px solid #fff;
+  }
+
+  /* Mobile_Contact_Form */
+  .form_popup .contact_form {
+    width: 95%;
+    margin-top: 45%;
+    padding: 20px;
+  }
+  .contact_form {
+    padding: 10px;
+  }
+
+  /* Mobile_Service_List */
+  .service_list li::after {
+    display: none;
+  }
+
+  /* Mobile_Home_Page */
+  /* Mobile_Welcome_Area */
+  .welcome_area .col-lg-5 {
+    height: 520px;
+  }
+  .welcome_area .space_50 {
+    height: 20px;
+  }
+  .welcome_slider_card {
+    width: 200px;
+  }
+  .welcome_slider_img .owl-dots {
+    bottom: 0;
+    right: 17%;
+  }
+  .welcome_slider_card {
+    bottom: -1px;
+    padding: 30px 10px 10px 10px;
+  }
+  .owl-item .single_welcome_slider img.single_welcome_slider_img {
+    height: 400px;
+  }
+
+  /* Mobile_About_rea */
+  .about_area .about_text h1 {
+    font-size: 25px;
+  }
+  .about_area .space_30 {
+    height: 10px;
+  }
+  .about_text h1 {
+    text-align: center;
+  }
+  .about_area .about_text h1::after {
+    width: 175px;
+    bottom: -5px;
+    left: 10%;
+  }
+  .about_area .about_text h1 {
+    line-height: 40px;
+  }
+
+  /* Mobile_Counter_Area */
+  .counter_padding {
+    padding: 40px 15px 40px 15px;
+  }
+  .counters::after {
+    display: none;
+  }
+  .counter_area .heading2 h3:after {
+    width: 100px;
+    left: 23%;
+  }
+
+  /* Mobile_Service_Area */
+  .service_area .mobile_spacing-10 {
+    margin-top: -30px;
+  }
+  .tab_display_none {
+    display: unset;
+  }
+
+  /* Mobile_Blog_Area */
+  .blog_area .space_30 {
+    height: 20px;
+  }
+  .blog_text h6 {
+    text-align: center;
+  }
+
+  /* Mobile_Work_Area */
+  .work_area .heading {
+    margin-bottom: 30px;
+  }
+  .work_area .space_60 {
+    height: 0;
+  }
+  .work_area .row:last-child > div:after {
+    right: 37%;
+  }
+
+  /* Mobile_Client_Area */
+  .client_area_wrap.section_padding {
+    padding: 0 0 50px 0;
+  }
+  .client_area .owl-nav {
+    left: 35%;
+    bottom: 3%;
+  }
+  .client_card {
+    padding: 0px 13px;
+  }
+  .card_counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  #client_prev_button i,
+  #client_next_button i {
+    color: #060606;
+  }
+
+  /* Mobile_Testimonial_Area */
+  .testimonial_thumb_content_area {
+    display: none;
+  }
+  .testimonial_icon {
+    text-align: center;
+  }
+  .testimonial_author {
+    margin-top: 40px;
+    padding-left: 0;
+    text-align: center;
+    border-left: 0;
+  }
+  .testimonials_carousel .owl-nav {
+    right: 33%;
+    bottom: -10px;
+  }
+
+  /* Mobile_Footer_Area */
+  .footer_area {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .footer_social {
+    text-align: center;
+    margin-top: 45px;
+    margin-right: 45px;
+  }
+
+  /* ------ Mobile_Single_News_Page ----- */
+
+  /* Mobile_News_Details_Sub */
+  .news_details_sub {
+    padding-left: 0px;
+    margin-left: 10%;
+  }
+  .news_details_sub div {
+    width: 48%;
+  }
+
+  /* Mobile_Video */
+  a.service_play_icon {
+    height: 40px;
+    width: 40px;
+    font-size: 35px;
+    left: 45%;
+    top: 45%;
+  }
+  .service_video {
+    margin: 35px 0;
+  }
+
+  /* Mobile_Social */
+  .single_news_social {
+    margin-bottom: 45px;
+  }
+  .single_news_social .abou_social_heading {
+    padding-right: 0px;
+    margin: 0px;
+    font-size: 14px;
+  }
+  .single_news_social .footer_social {
+    margin-left: -15px;
+    margin-right: 25px;
+  }
+  .footer_social li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  /* Mobile_Comment_Area */
+  .comment_text h4 {
+    margin-bottom: 40px;
+    margin-left: -5px;
+    padding-top: 15px;
+  }
+  .comment_text h4 a {
+    padding-left: 40px;
+  }
+  .comment_text p {
+    margin-left: -26%;
+    margin-right: 5%;
+  }
+  .cpagination {
+    float: none;
+    margin-left: 11%;
+  }
+
+  /* Mobile_Single_Right_Area */
+
+  /* Mobile_Article_Area */
+  .article_date,
+  .blog_buttons {
+    text-align: left;
+  }
+
+  .article_date {
+    margin-left: -20px;
+  }
+
+  /* ------ Mobile_Single_Service_Page ----- */
+
+  /* Mobile_Service_Area */
+  .single_service_main_div .service_area.section_padding {
+    padding: 0 0 50px 0;
+  }
+  .single_service_main_div .client_card .cbtn.cbtn1 {
+    left: 0%;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+
+  /* ---------- Mobile_Single_Portfolio --------- */
+
+  /* Mobile_Portfolio_Spaceing */
+  .single_portfolio_main_body_div .space_60 {
+    height: 30px;
+  }
+
+  /* Mobile_Portfolio_Owl_Carousel */
+  .single_portfolio_top_area .owl-carousel .owl-nav button.owl-next,
+  .single_portfolio_top_area .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 5px;
+    margin-right: 25px;
+  }
+  .single_portfolio_top_area i.arrow_alignment {
+    left: 25%;
+  }
+  .single_portfolio_top_area .owl-carousel .owl-nav i.arrow_alignment {
+    top: 0%;
+  }
+  .single_portfolio_top_area
+    .owl-carousel
+    .owl-nav
+    button.owl-next
+    i.arrow_alignment {
+    left: 40%;
+  }
+  .single_porfolio_carousel
+    .owl-carousel
+    .owl-nav
+    button.owl-next
+    i.arrow_alignment {
+    right: 10%;
+  }
+  .single_porfolio_carousel
+    .owl-carousel
+    .owl-nav
+    button.owl-prev
+    i.arrow_alignment {
+    left: 10%;
+  }
+  .single_porfolio_carousel .owl-nav {
+    margin-top: 40px;
+    margin-left: -35px;
+  }
+  .portfolio_carousel_img {
+    max-width: 100px;
+  }
+  .portfolio_carousel_text {
+    padding-left: 100px;
+  }
+  .portfolio_carousel_text p {
+    font-size: 12px;
+  }
+  .portfolio_carousel_text h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  /* Mobile_Portfolio_Solve_Area */
+  .single_portfolio_solution_text {
+    text-align: center;
+  }
+
+  /* Mobile_Portfolio_Single_Portfolio_Text */
+  .single_portfolio_text .text p {
+    text-align: center;
+  }
+  .single_portfolio_text .text p:last-child {
+    margin-top: 30px;
+  }
+
+  /* Mobile_Portfolio_Card_Box */
+  .single_portfolio_service .card_box {
+    padding: 5px 10px;
+  }
+  .portfolio_service_table td {
+    font-size: 13px;
+  }
+  .portfolio_social li:nth-child(2) {
+    margin-left: 35px;
+  }
+  li.portfolio_social_heading {
+    font-size: 13px;
+  }
+  .contact_form_text {
+    padding: 20px 10px 30px 10px;
+  }
+
+  /* --------- Mobile_Contact_Us ----------- */
+
+  /* Mobile_Contact_Info */
+  .contact_info_about {
+    display: none;
+  }
+  .contact_us_contact_info_area {
+    margin: -65px 5px 400px 5px;
+  }
+  .contact_us_contact_info_card {
+    right: 0;
+  }
+  .contact_us_contact_info_card .info_card {
+    width: 100%;
+  }
+
+  /* Mobile_Contact_Us_Work_Area */
+  .work_contact_form_wrap .heading5 h2 {
+    font-size: 30px;
+  }
+
+  /* --------- Mobile_About_Us ----------- */
+
+  /* Mobile_About_Us_Contact_Info */
+  .about_us_main_body .contact_us_contact_info_area {
+    margin: 0px;
+  }
+  .about_us_main_body .contact_info_about {
+    display: block;
+    height: 300px;
+  }
+  .about_us_main_body .contact_info_social {
+    display: none;
+  }
+  .about_us_main_body img.contact_info_img {
+    width: 100%;
+  }
+
+  /* Mobile_About_Us_About_Area */
+  .about_us_single_counter {
+    border-left: 0;
+    padding-left: 0px;
+  }
+  .about_us_about_counter span.counter {
+    margin-left: 45%;
+  }
+
+  /* Mobile_About_Us_Team */
+  .single_team {
+    margin: -2px;
+    margin-bottom: 30px;
+  }
+  .single_team:hover a.team_link {
+    right: -10px;
+  }
+}
+
+/*------------------------------
+   Small Screen Mobile Layout
+-------------------------------*/
+@media only screen and (max-width: 320px) {
+  /* Small_Common_Tag */
+  p,
+  a,
+  .portfolio_service_table td {
+    font-size: 12px;
+  }
+  .portfolio_social li:nth-child(2) {
+    margin-left: 25px;
+  }
+  li.portfolio_social_heading {
+    font-size: 12px;
+  }
+
+  /* ---------- Small_Home_Page_Area ---------- */
+
+  /* Small_About_Area */
+  .about_area .about_text h1::after {
+    width: 165px;
+    bottom: -5px;
+    left: 6%;
+  }
+
+  /* Samll_Counter_Area */
+  .counter_area .heading2 h3:after {
+    left: 20%;
+  }
+
+  /* ---------- Small_Single_News_Area ---------- */
+
+  /* Small_News_Comment_Area */
+  .comment_text p {
+    margin-left: -30%;
+    margin-right: 8%;
+  }
+  .cpagination {
+    margin-left: 5%;
+  }
+
+  /* --------- Samll_Contact_Us ----------- */
+
+  /* Small_Contact_Us_Work_Area */
+  .work_contact_form_wrap .heading5 h2 {
+    font-size: 28px;
+  }
+
+  /* -------- Small_About_Us ------------- */
+
+  /* Small_About_Us_Team */
+  .single_team_hover_img img {
+    height: 443px;
+  }
+  .single_team {
+    margin: -1px;
+    margin-bottom: 30px;
+  }
+}

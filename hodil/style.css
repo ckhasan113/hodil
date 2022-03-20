@@ -1,0 +1,963 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*
+-----------------------------
+Table Of Content
+
+ 1. Footer Area CSS
+      a. Footer_Common
+      b. Footer_Social
+      c. Footer_Single
+      d. Footer_Menu
+      e. Footer_Contact
+      f. Copyright
+      g. Chat
+      h. Footer_Img
+      i. Footer_Bottom_Area
+
+ 2. Contact Area CSS
+      a. Contact_Common
+      b. Contact_Img
+      c. Contact_Form
+
+ 3. Blog Area CSS
+      a. Blog_Common
+      b. Blog_Img
+      c. Blog_Text
+      d. Blog_Button
+
+ 4. Testimonial Area CSS
+      a. Testimonial_Text_Area
+      b. Testimonial_Carousel
+      c. Thumb_Carousel
+
+ 5. Client Area CSS
+      a. Client_Common
+      b. Client_Card
+      c. Client_Owl Carousel
+
+ 6. Work Area CSS
+      a. Single_Work
+      b. Work_Counter
+      c. Counter_Text
+
+ 7. Service Area CSS
+ 8. Counter Area CSS
+      a. Counter_Common
+      b. Counter_Img
+
+ 9. About Area CSS
+      a. About_Img
+      b. About_Text
+
+10. Welcome Area CSS
+      a. Welcome_Common
+      b. Welcome_Text
+      c. Welcome_Social
+      d. Welcome_Slider
+
+11. Header Area CSS
+12. Contact Form Area CSS
+
+
+
+------------------------------
+*/
+
+/*=====================
+    Footer Area CSS
+======================*/
+
+/* Footer_Common */
+.footer_arae {
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer_Social */
+.footer_social {
+  text-align: right;
+}
+.footer_social li {
+  display: inline-block;
+  margin-left: 5px;
+}
+.footer_social li a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #343434;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #616161;
+}
+.footer_social li a:hover {
+  background: #343434;
+  color: #fff;
+}
+
+/* Footer_Single */
+.single_footer {
+  margin-bottom: 30px;
+}
+.single_footer h5 {
+  margin-bottom: 25px;
+}
+
+/* Footer_Menu */
+.single_footer_menu ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.single_footer_menu li a {
+  font-size: 16px;
+  line-height: 32px;
+  color: #bcbcbc;
+  text-decoration: none;
+}
+.single_footer_menu a:hover {
+  color: #fbbf3f;
+}
+
+/* Footer_Contact */
+.footer_contact h6 {
+  margin-bottom: 15px;
+}
+
+.footer_contact a {
+  color: #fbbf3f;
+}
+.footer_contact p {
+  color: #bcbcbc;
+}
+.footer_contact a:hover {
+  color: #bcbcbc;
+}
+
+/* Copyright */
+.copyright p {
+  color: #bcbcbc;
+}
+
+/* Chat */
+.footer_chat_option {
+  position: fixed;
+  right: 1%;
+  bottom: 2%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #fbbf3f;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Footer_Img */
+img.footer_map {
+  position: absolute;
+  bottom: 1%;
+  right: 3%;
+  z-index: 99;
+}
+
+/* Footer_Bottom_Area */
+.footer_bottom {
+  background: #343433;
+}
+
+.footer_bottom a {
+  color: #7e7e7e;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  padding: 15px 0;
+  font-size: 15px;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.footer_bottom a i {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  margin-top: -15px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  background: #383838;
+  border-radius: 50%;
+}
+
+/*=====================
+    Contact Area CSS
+======================*/
+/* Contact_Common */
+.contact_wrap {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+/* Contact_Img */
+img.contact_img {
+  position: absolute;
+  left: 0;
+  width: 46%;
+  height: 100%;
+  z-index: 1;
+}
+/* Contact_Form */
+.contact_form {
+  background: #fff;
+  padding: 50px;
+}
+.contact_form form input,
+.contact_form form textarea,
+.contact_form form select {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background: #ededed;
+}
+
+/*=====================
+    Blog Area CSS
+======================*/
+/* Blog_Common */
+.single_blog {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+/* Blog_Img */
+.blog_img {
+  position: relative;
+  z-index: 2;
+  max-height: 250px;
+  overflow: hidden;
+}
+.blog_img p {
+  position: absolute;
+  top: 15px;
+  left: -21px;
+  font-size: 12px;
+  background: #fbbf3f;
+  color: #060606;
+  padding: 0px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0 30px 30px 0;
+}
+.blog_img img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.single_blog:hover .blog_img img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* Blog_Text */
+.blog_text {
+  padding: 25px;
+}
+.blog_text h6 {
+  color: #fbbf3f;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.blog_text h3 {
+  margin-bottom: 15px;
+}
+.blog_text h3 a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2b2b2b;
+  text-decoration: none;
+}
+.blog_text h3 a:hover {
+  color: #fbbf3f;
+}
+.blog_text p {
+  color: #060606;
+}
+/* Blog_Button */
+.blog_buttons {
+  margin-top: 50px;
+}
+.blog_buttons a:last-child {
+  float: right;
+}
+
+/*=======================
+    Testimonial Area CSS
+========================*/
+/* Testimonial_Text_Area */
+.testimonial_icon {
+  margin-top: 55px;
+}
+.testimonial_text {
+  margin: 20px 0;
+  font-style: italic;
+}
+.testimonial_text p {
+  padding: 0px 5px;
+}
+.testimonial_author {
+  margin-top: 80px;
+  padding-left: 20px;
+  border-left: 2px solid #fbbf3f;
+}
+.testimonial_author h6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.testimonial_author p {
+  font-size: 12px;
+  color: #838383;
+}
+
+/* Testimonial_Carousel */
+.testimonials_container {
+  margin-top: -50px;
+}
+.testimonials_carousel .owl-nav {
+  position: absolute;
+  right: 5px;
+  bottom: 40px;
+}
+
+/* Thumb_Carousel */
+.testimonial_thumb_content_area {
+  text-align: right;
+}
+.testimonial_thumb_content_area img {
+  height: 100%;
+  border-radius: 50%;
+}
+.testimonial_thum_content {
+  margin: 0px;
+  padding: 0px;
+  width: 250px;
+  display: inline-block;
+  overflow: hidden;
+}
+.testimonial_thumb_img {
+  display: block;
+  margin: 0px 10px;
+}
+.testimonial_thumb_content_slider .owl-item > div {
+  margin-top: 20px;
+}
+.testimonial_thumb_content_slider .owl-item.center > div {
+  margin-top: 0;
+  height: 70px;
+  width: 70px;
+}
+.testimonial_thumb_content_slider .owl-item.center > div:after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 50%;
+  background: #fbbf3f;
+  bottom: -3px;
+  left: 51%;
+  border: 3px solid #060606;
+  font-size: 14px;
+}
+.testimonial_thumb_content_slider .owl-item {
+  cursor: pointer;
+}
+
+/*=====================
+    Client Area CSS
+======================*/
+/* Client_Common */
+.client_area {
+  position: relative;
+  z-index: 2;
+  border-radius: 10px 0px 0px 10px;
+  overflow: hidden;
+  background: #fff;
+}
+/* Client_Card */
+.client_card {
+  padding: 0px 40px;
+}
+
+.client_card p {
+  color: #060606;
+}
+.single_card_counter {
+  display: inline-block;
+  margin-right: 15px;
+  border-right: 1px solid #ddd;
+  padding-right: 15px;
+}
+.card_counter {
+  margin: 25px 0;
+}
+
+.card_counter_text span {
+  font-weight: 600;
+  font-size: 30px;
+  color: #060606;
+}
+/* Client_Owl Carousel */
+.client_area .owl-nav {
+  position: absolute;
+  left: -30%;
+  bottom: 5%;
+}
+.client_carousel .owl-carousel .owl-item img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.single_client_img img {
+  width: 100% !important;
+}
+.client_slider_img_counter p {
+  color: #060606;
+  font-size: 24px;
+  font-weight: 400;
+}
+.client_slider_img_counter span {
+  font-size: 50px;
+  color: #fbbf3f;
+}
+.client_slider_img_counter strong {
+  padding-left: 20px;
+  font-size: 16px;
+}
+.client_slider_img_counter {
+  padding-top: 20px;
+}
+
+/*=====================
+    Work Area CSS
+======================*/
+
+/* Single_Work */
+.single_work {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.single_work:last-child {
+  margin-bottom: 0px;
+}
+.single_work_icon {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: #fbbf3f;
+  line-height: 100px;
+  border-radius: 50%;
+}
+.work_separate {
+  height: 1px;
+  margin: 20px 0;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid #fff;
+}
+.work_separate::after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 5px;
+  background: #fbbf3f;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  margin-top: -3px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.single_work:hover .work_separate::after {
+  width: 100%;
+  left: 0;
+  height: 1px;
+  top: 2px;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.single_work_text h4 {
+  font-size: 20px;
+}
+
+/* Work_Counter */
+.work_area {
+  counter-reset: works;
+}
+.work_area .row:last-child > div {
+  position: relative;
+  z-index: 2;
+}
+.work_area .row:last-child > div:after {
+  position: absolute;
+  content: "" counter(works) " ";
+  counter-increment: works;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 50%;
+  background: #3f7bfb;
+  top: 0;
+  right: 32%;
+  border: 3px solid #000;
+  font-size: 14px;
+}
+
+/*=====================
+    Service Area CSS
+======================*/
+.single_service {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.single_service {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.service_img img {
+  width: 100%;
+}
+.single_service1:hover .service_img img {
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.single_service1:hover {
+  background: #3fe8fb65;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.single_service1:hover a {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.single_service1:hover p {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.service_text {
+  padding: 25px;
+}
+.service_text h3 a {
+  color: #060606;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.single_service:hover h3 a {
+  color: #fbbf3f;
+}
+.service_text p {
+  color: #060606;
+  margin: 20px 0px 40px 0;
+}
+
+/*=====================
+    Counter Area CSS
+======================*/
+
+/* Counter_Common */
+.counter_wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fbbf3f;
+}
+.counter_wrap .row padding_zero {
+  padding: 0;
+}
+.counter_padding {
+  padding: 40px 40px 40px 55px;
+}
+.single_counter {
+  padding: 23px !important;
+}
+.counters {
+  background: #fff;
+  padding: 27px !important;
+  position: relative;
+  z-index: 2;
+}
+.counters::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #ededed;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+}
+.counters::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: #ededed;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+.counter .row {
+  margin: 0;
+}
+
+/* Counter_Img */
+.counter_icon img {
+  max-width: 55px;
+  max-height: 50px;
+}
+
+/* Counter_Text */
+.counter_text p {
+  text-align: center;
+  font-weight: 600;
+  color: #424242;
+}
+.counter_text {
+  color: #060606;
+}
+.counter_text span {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+/*=====================
+    About Area CSS
+======================*/
+
+/* About_Img */
+.about_area .about_img {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.about_area .about_img::after {
+  position: absolute;
+  content: "";
+  height: 150px;
+  width: 100%;
+  background: -o-linear-gradient(271deg, transparent, #060606);
+  background: linear-gradient(179deg, transparent, #060606);
+  left: 0;
+  bottom: 0;
+}
+
+/* About_Text */
+.about_area .about_text {
+  margin-left: 70px;
+  width: 100%;
+}
+.about_area .about_text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  position: relative;
+  z-index: 2;
+}
+.about_area .about_text h1::after {
+  font-size: 50px;
+  height: 2px;
+  width: 100px;
+  bottom: 0;
+  background: #fbbf3f;
+  position: absolute;
+  content: "";
+  margin: 0 0 10px 30px;
+}
+.about_area .about_text p {
+  margin-top: 30px;
+}
+
+/*=====================
+    Welcome Area CSS
+======================*/
+/* Welcome_Common */
+.welcome_area .row .no_mp {
+  margin: 0;
+  padding: 0;
+}
+.welcome_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+/* Welcome_Text */
+.welcome_text_table {
+  width: 100%;
+  display: table;
+}
+.welcome_text_table_cell {
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.welcome_text h6 {
+  font-size: 12px;
+  color: #fbbf3f;
+  background: #131313;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+.welcome_text h1 {
+  font-weight: 800;
+  margin: 30px 0;
+  line-height: 3.8rem;
+  font-size: 56px;
+}
+
+/* Welcome_Social */
+.welcome_social_wrap {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.welcome_social {
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.welcome_social li a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #343433;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #616160;
+}
+.welcome_social li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+.welcome_social li:last-child {
+  margin-bottom: 0px;
+}
+.welcome_social li a:hover {
+  background: #fbbf3f;
+  color: #fff;
+}
+
+/* Welcome_Slider */
+.single_welcome_slider {
+  position: relative;
+  z-index: 2;
+}
+.welcome_slider_img {
+  top: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.welcome_slider_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.owl-item.active .single_welcome_slider img.single_welcome_slider_img {
+  width: 100%;
+}
+.welcome_slider_card {
+  width: 430px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 40px;
+  background: #060606;
+  opacity: 0.8;
+}
+.welcome_slider_img .owl-dots > div {
+  height: 5px;
+  width: 5px;
+  background: #fff;
+  display: inline-block;
+}
+
+.welcome_slider_img .owl-dots {
+  position: absolute;
+  right: 26%;
+  z-index: 99;
+  bottom: 1%;
+}
+
+.welcome_slider_img .owl-dots > div {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.welcome_slider_card h6 {
+  color: #fbbf3f;
+  margin-bottom: 6px;
+}
+.welcome_slider_img .owl-dots > div.active {
+  background: #fbbf3f;
+  height: 10px;
+  width: 10px;
+  margin-bottom: -2.5px;
+}
+
+.welcome_slider_card p {
+  margin-top: 25px;
+  color: #838383;
+  font-weight: 500;
+}
+
+/*=====================
+    Header Area CSS
+======================*/
+.header_area_wrap {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header_area_wrap.sticky {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  z-index: 99;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header_area .container-fluid {
+  padding: 0 5%;
+}
+.header_area {
+  position: relative;
+  z-index: 99;
+}
+.header_area_wrap {
+  position: absolute;
+  width: 100%;
+  padding: 15px 0;
+}
+
+/*=====================
+Contact Form Area CSS
+======================*/
+.form_popup {
+  background: #000;
+  width: 100%;
+  height: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.form_popup.active {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.form_popup .contact_form {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 9%;
+  border-radius: 5px;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.form_popup.active .contact_form {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.close_btn {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 56px;
+  cursor: pointer;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  z-index: 999999;
+  cursor: pointer;
+}
+
+.close_btn:hover {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
